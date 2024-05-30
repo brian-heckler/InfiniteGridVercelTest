@@ -1,14 +1,9 @@
 {
-    "headers": [
-      {
-        "source": "/(.*)",
-        "headers": [
-          {
-            "key": "X-Frame-Options",
-            "value": "SAMEORIGIN"
-          }
-        ]
-      }
-    ]
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {}
+    }
+  ]
 }
-  
